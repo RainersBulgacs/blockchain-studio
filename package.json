@@ -1,0 +1,25 @@
+{
+  "name": "blockchain-studio-sepolia-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Three classroom blockchain assignments: ERC-20 tokens, token game, and token transfer dapp.",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:group1": "hardhat test test/group1.test.js",
+    "test:group2": "hardhat test test/group2.test.js",
+    "test:group3": "hardhat test test/group3.test.js",
+    "deploy:group1": "hardhat run scripts/deploy-group1.js --network sepolia",
+    "deploy:group2": "hardhat run scripts/deploy-group2.js --network sepolia",
+    "deploy:group3": "hardhat run scripts/deploy-group3.js --network sepolia",
+    "serve": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "5.0.0",
+    "hardhat": "2.22.17"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.1.0",
+    "dotenv": "16.4.7"
+  }
+}
